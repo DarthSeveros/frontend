@@ -20,12 +20,10 @@ function calculateIdealWeight(){
         result_txt = "Te encuentras en obesidad.";
     }
 
-    
-    
     var p_result = document.getElementById("result");
     p_result.innerHTML = result_txt;
     
 }
 
-mybutton = document.getElementById("submit_button");
-mybutton.onclick = calculateIdealWeight;
+//mybutton = document.getElementById("submit_button");
+//mybutton.onclick = calculateIdealWeight();

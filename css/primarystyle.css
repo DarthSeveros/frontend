@@ -1,8 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
 body {
     background-image: url(../img/white_background.jpg);
 }
+#container-primary {
+    margin: auto 100px;
+}
 
 #container-header h1 {
-    color: blue;
+    color: #5454cc;
     text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+table th {
+    text-align: left;
 }

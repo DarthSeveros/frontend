@@ -6,18 +6,24 @@ function calculateIdealWeight(){
     var imc = weight/height**2;
 
     if (imc < 18.5) {
-        result_txt = "Estas por debajo de lo normal.";
+        ideal_weight = 18.5*Math.pow(height, 2);
+        win = ideal_weight - weight;
+        result_txt = "Estas por debajo de lo normal. Debes ganar al menos " + win.toFixed(1) + " kilos.";
     }
     else if (imc < 25) {
         result_txt = "Tu peso esta dentro de lo normal.";
     }
 
     else if (imc <29.9) {
-        result_txt = "Te encuentras en sobrepeso.";
+        ideal_weight = 25*Math.pow(height, 2);
+        loss = weight - ideal_weight;
+        result_txt = "Te encuentras en sobrepeso. Debes perder al menos " + loss.toFixed(1) + " kilos.";
     }
 
     else {
-        result_txt = "Te encuentras en obesidad.";
+        ideal_weight = 25*Math.pow(height, 2);
+        loss = weight - ideal_weight;
+        result_txt = "Te encuentras en obesidad. Debes perder al menos " + loss.toFixed(1) + " kilos.";
     }
 
     var p_result = document.getElementById("result");

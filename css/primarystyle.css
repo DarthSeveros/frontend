@@ -2,6 +2,7 @@
 
 body {
     background-image: url(../img/white_background.jpg);
+    font-family: 'Ubuntu', 'sans-serif';
 }
 #container-primary {
     margin: auto 100px;

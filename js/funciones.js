@@ -1,10 +1,13 @@
 function calculateIdealWeight(){
-    //Obtenemos la edad
+    //Obtenemos la edad, altura y peso
     var age = document.getElementById("fage").value;
     var height = document.getElementById("fheight").value;
     var weight = document.getElementById("fweight").value;
+
+    //Calculamos el imc
     var imc = weight/height**2;
 
+    //Comparamos el imc para determinar el estado del peso
     if (imc < 18.5) {
         ideal_weight = 18.5*Math.pow(height, 2);
         win = ideal_weight - weight;
@@ -26,6 +29,7 @@ function calculateIdealWeight(){
         result_txt = "Te encuentras en obesidad. Debes perder al menos " + loss.toFixed(1) + " kilos.";
     }
 
+    //Mostramos el estado del peso y cuanto peso debe perderse o ganarse
     var p_result = document.getElementById("result");
     p_result.innerHTML = result_txt;
     

@@ -1,10 +1,12 @@
 function verificateAge(age){
+    //Chequeamos edad fuera de 1 a 10
     if (age < 1 || age > 10) {
         return true;
     }
 }
 
 function viricateWeight(weight) {
+    //Chequeamos peso fuera de 1 a 100
     if (weight < 1 || wieght > 100) {
         return true;
     }

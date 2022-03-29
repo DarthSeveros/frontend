@@ -7,7 +7,7 @@ function verificateAge(age){
 
 function viricateWeight(weight) {
     //Chequeamos peso fuera de 1 a 100
-    if (weight < 1 || wieght > 100) {
+    if (weight < 1 || weight > 100) {
         return true;
     }
 }

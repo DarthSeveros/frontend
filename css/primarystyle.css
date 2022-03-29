@@ -17,3 +17,13 @@ body {
 table th {
     text-align: left;
 }
+
+.txt_result {
+    margin: 20px auto;
+    font-size: 25px;
+}
+
+
+#container_img_result_state_weight > img{
+    width: 100px;
+}

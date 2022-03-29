@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+    <title>Calduladora peso ideal</title>
+    <link rel="stylesheet" href="css/primarystyle.css">
+    <script src="js/funciones_peso_ideal.js" lang="javascript"></script>
+</head>
+<body>
+    <!-- Contenedor principal-->
+    <div id="container-primary">
+        <!-- HEADER -->
+        <div id="container-header">
+            <h1>Calcular peso ideal</h1>
+            <hr>
+        </div>
+
+        <!-- FORM -->
+        <div id="container-form">
+            <h2>Ingrese los datos solicitados</h2>
+            <form>
+                <table>
+                    <tr>
+                        <th><label for="fage">Edad: </label></th>
+                        <th><input type="text" id="fage" name="fage"></th>
+                    </tr>
+                    <tr>
+                        <th><label for="fweight">Peso(kg): </label></th>
+                        <th><input type="text" id="fweight" name="fweight"></th> 
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th><input id="submit_button" type="button" value="Submit" onclick="calcularPesoIdeal()"></th>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+        <!-- CONTENEDOR RESULTADO -->
+        <div class="txt_result" id="container-result_ideal_weight"></div>
+        <div class="txt_result" id="container_result_state_weight"></div>
+        <div id="container_img_result_state_weight"></div>
+        <div><h2><a href="index.html">Regresar</a></h2></div>
+
+    </div>
+</body>
+
+</html>

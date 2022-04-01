@@ -5,7 +5,7 @@ function verificateAge(age){
     }
 }
 
-function viricateWeight(weight) {
+function virificateWeight(weight) {
     //Chequeamos peso fuera de 1 a 100
     if (weight < 1 || weight > 100) {
         return true;
@@ -37,7 +37,7 @@ function calcularEstadoPeso(peso_ideal){
     var peso_actual = document.getElementById('fweight').value;
 
     //Verificamos que el peso sea el correcto
-    if (verificateAge(peso_actual)){
+    if (verificateWeight(peso_actual)){
         alert('Peso invalido, debe ser entre 1 y 100 kilos, intente de nuevo.')
         return;
     }
